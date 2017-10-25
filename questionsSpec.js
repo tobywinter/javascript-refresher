@@ -22,16 +22,16 @@ describe('javascriptRefresher', function(){
     var result = removeNullAndFalseElements(['a', 'b', null, null, false, 0]);
     expect(result).toEqual(['a', 'b', 0]);
   });
+
+  it('reverses the letters of each element in an array', function() {
+    var result = reverseWordsInArray(['dog', 'monkey', 'elephant', 'kayak']);
+    expect(result).toEqual(['god', 'yeknom', 'tnahpele', 'kayak']);
+  });
 });
 
 
 
 // describe('javascriptRefresher', function(){
-//
-//   it('reverses the letters of each element in an array', function(){
-//     var result = reverseWordsInArray(['dog', 'monkey', 'elephant', 'kayak']);
-//     expect(result).toEqual(['god', 'yeknom', 'tnahpele', 'kayak']);
-//   });
 //
 //   it('makes every possible pairing of students', function(){
 //     var result = everyPossiblePair(['Jon', 'Tyrion', 'Daenerys']);
