@@ -7,7 +7,14 @@ describe('javascriptRefresher', function(){
     var result = selectElementsStartingWithA(['bananas', 'apples', 'pears', 'avocados']);
     expect(result).toEqual(['apples', 'avocados']);
   });
+
+  it('selects elements starting with a vowel', function(){
+    var result = selectElementsStartingWithVowel(['john', 'david', 'omar', 'fred', 'idris', 'angela']);
+    expect(result).toEqual(['omar', 'idris', 'angela']);
+  });
 });
+
+
 
 // describe('javascriptRefresher', function(){
 //
