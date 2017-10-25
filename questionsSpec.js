@@ -32,6 +32,11 @@ describe('javascriptRefresher', function(){
     var result = everyPossiblePair(['Jon', 'Tyrion', 'Daenerys']);
     expect(result).toEqual([[ 'Daenerys', 'Jon' ], [ 'Daenerys', 'Tyrion' ], [ 'Jon', 'Tyrion' ]]);
   });
+
+  it('takes all elements except the first 3', function() {
+    var result = allElementsExceptFirstThree([1, 2, 3, 4, 5, 6, 7, 8]);
+    expect(result).toEqual([4, 5, 6, 7, 8]);
+  });
 });
 
 
