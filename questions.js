@@ -1,11 +1,13 @@
 var selectElementsStartingWithA = function(array) {
   return array.filter(function(element) {
-    return (element[0] == 'a' || element[0] == 'A')
+    return (element[0] == 'a' || element[0] == 'A');
   });
 }
 
 var selectElementsStartingWithVowel = function(array) {
-  return 'Write your method here';
+  return array.filter(function(element) {
+    return ['a','e', 'i', 'o', 'u'].includes(element[0]);
+  });
 }
 
 var removeNullElements = function(array) {
