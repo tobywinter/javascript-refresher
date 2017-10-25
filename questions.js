@@ -19,17 +19,23 @@ var removeNullElements = function(array) {
 var removeNullAndFalseElements = function(array) {
   return array.filter(function(element) {
     return element !== false && element !== null;
-  })
+  });
 }
 
 var reverseWordsInArray = function(array) {
   return array.map(function(element) {
     return element.split('').reverse().join('')
-  })
+  });
 }
 
 var everyPossiblePair = function(array) {
-  return 'Write your method here';
+  var result = []
+  for (var i = 0; i < array.length - 1; i++) {
+    for (var j = i; j < array.length -1; j++) {
+      result.push([array[i], array[j+1]].sort());
+    }
+  }
+  return result.sort()
 }
 
 var allElementsExceptFirstThree = function(array) {
