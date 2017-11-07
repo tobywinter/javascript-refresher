@@ -89,8 +89,8 @@ var repeatElements = function(array) {
 };
 
 var stringToNumber = function(string) {
-  return 'Write your method here';
-}
+  return parseInt(string);
+};
 
 var calculateAverage = function(array) {
   return 'Write your method here';

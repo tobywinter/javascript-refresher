@@ -79,22 +79,22 @@ describe('javascriptRefresher', function(){
     var result = repeatElements(['a','b','c']);
     expect(result).toEqual(['a','b','c','a','b','c']);
   });
+
+  it('turns a number string into a number', function(){
+    var result = stringToNumber('3');
+    expect(result).toEqual(3);
+  });
+
+  //   it('turns a number string into a number', function(){
+  //     var result = stringToNumber('3');
+  //     expect(result).toEqual(3);
+  //   });
+  //
 });
 
 
 
 // describe('javascriptRefresher', function(){
-//
-//   it('repeats the elements of an array', function(){
-//     var result = repeatElements(['a', 'b', 'c']);
-//     expect(result).toEqual(['a', 'b', 'c', 'a', 'b', 'c']);
-//   });
-//
-//   it('turns a number string into a number', function(){
-//     var result = stringToNumber('3');
-//     expect(result).toEqual(3);
-//   });
-//
 //   it('calculates the average of an array of numbers', function(){
 //     var result = calculateAverage([10, 15, 25]);
 //     expect(result).toEqual((10 + 15 + 25) / 3);
