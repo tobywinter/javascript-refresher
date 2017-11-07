@@ -71,19 +71,19 @@ describe('javascriptRefresher', function(){
   });
 
   it('sums the numbers in an array', function(){
-    var resutl = sumNumbers([1,3,5,6,2,8]);
+    var result = sumNumbers([1,3,5,6,2,8]);
     expect(result).toEqual(25);
+  });
+
+  it('repeats the elements of an array', function(){
+    var result = repeatElements(['a','b','c']);
+    expect(result).toEqual(['a','b','c','a','b','c']);
   });
 });
 
 
 
 // describe('javascriptRefresher', function(){
-//
-//   it('sums up the numbers in an array', function(){
-//     var result = sumNumbers([1, 3, 5, 6, 2, 8]);
-//     expect(result).toEqual(25);
-//   });
 //
 //   it('repeats the elements of an array', function(){
 //     var result = repeatElements(['a', 'b', 'c']);

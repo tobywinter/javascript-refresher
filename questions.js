@@ -79,12 +79,14 @@ var longestWord = function(array) {
 };
 
 var sumNumbers = function(array) {
-  return 'Write your method here';
-}
+  return array.reduce(function(a, b){
+    return a + b;
+  });
+};
 
 var repeatElements = function(array) {
-  return 'Write your method here';
-}
+  return (array+','+array).split(',');
+};
 
 var stringToNumber = function(string) {
   return 'Write your method here';
