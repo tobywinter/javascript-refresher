@@ -94,12 +94,16 @@ var stringToNumber = function(string) {
 
 var calculateAverage = function(array) {
   var sum = sumNumbers(array);
-  return (sum / array.length)
+  return (sum / array.length);
 };
 
 var getElementsUntilGreaterThanFive = function(array) {
-  return 'Write your method here';
-}
+  result = [];
+  for (i = 0; array[i] <= 5; i++) {
+    result.push(array[i]);
+  }
+  return result
+};
 
 var convertArrayToObject = function(array) {
   return 'Write your method here';
