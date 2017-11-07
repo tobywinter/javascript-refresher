@@ -41,47 +41,39 @@ describe('javascriptRefresher', function(){
     var result = addElementToBeginning([2,3,4,5], 1);
     expect(result).toEqual([1,2,3,4,5]);
   });
+
+  it('sorts an array by the last letter of each word', function(){
+    var result = sortByLastLetter(['Lannister', 'Stark', 'Greyjoy', 'Targaryen']);
+    expect(result).toEqual(['Stark', 'Targaryen', 'Lannister', 'Greyjoy']);
+  });
+
+  // it('gets the first half of a string', function(){
+  //   var resultOne = getFirstHalf('dragon');
+  //   var resultTwo = getFirstHalf('snake');
+  //
+  //   expect(resultOne).toEqual('dra');
+  //   expect(resultTwo).toEqual('sna');
+  // });
+
+  it('makes the given number negative', function(){
+    var result = makeNegative(100);
+    expect(result).toEqual(-100);
+  });
+
+  it('returns the shortest word in an array', function(){
+    var result = shortestWord(['winter', 'is', 'coming']);
+    expect(result).toEqual('is');
+  });
+
+  it('returns the longest word in an array', function(){
+    var result = longestWord(['winter', 'is', 'coming']);
+    expect(result).toEqual('winter');
+  });
 });
 
 
 
 // describe('javascriptRefresher', function(){
-//
-//   it('adds an element to the beginning of an array', function(){
-//     var result = addElementToBeginning([2, 3, 4, 5], 1);
-//     expect(result).toEqual([1, 2, 3, 4, 5]);
-//   });
-//
-//   it('sorts an array by the last letter of each word', function(){
-//     var result = sortByLastLetter(['Lannister', 'Stark', 'Greyjoy', 'Targaryen']);
-//     expect(result).toEqual(['Stark', 'Targaryen', 'Lannister', 'Greyjoy']);
-//   });
-//
-//   it('gets the first half of a string', function(){
-//     var resultOne = getFirstHalf('dragon');
-//     var resultTwo = getFirstHalf('snake');
-//
-//     expect(resultOne).toEqual('dra');
-//     expect(resultTwo).toEqual('sna');
-//   });
-//
-//   it('makes numbers negative', function(){
-//     var resultOne = makeNegative(5);
-//     var resultTwo = makeNegative(-5);
-//
-//     expect(resultOne).toEqual(-5);
-//     expect(resultTwo).toEqual(-5);
-//   });
-//
-//   it('counts elements in an array that are palindromes', function(){
-//     var result = numberOfPalindromes(['kayak', 'noon', 'khaleesi', 'hodor', 'racecar', 'abcbc', 'abcba']);
-//     expect(result).toEqual(4);
-//   });
-//
-//   it('returns the shortest word in an array', function(){
-//     var result = shortestWord(['winter', 'is', 'coming']);
-//     expect(result).toEqual('is');
-//   });
 //
 //   it('returns the longest word in an array', function(){
 //     var result = longestWord(['A', 'Lannister', 'always', 'pays', 'his', 'debts'])

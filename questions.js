@@ -50,28 +50,33 @@ var addElementToBeginning = function(array, element) {
 };
 
 var sortByLastLetter = function(array) {
-  return 'Write your method here';
-}
+  var reversed = reverseWordsInArray(array);
+  return reverseWordsInArray(reversed.sort());
+};
 
-var getFirstHalf = function(string) {
-  return 'Write your method here';
-}
+// var getFirstHalf = function(string) {
+//   var halfLength = Math.ceil(string.length / 2);
+// };
 
 var makeNegative = function(number) {
-  return 'Write your method here';
-}
+  return parseInt('-'+number);
+};
 
 var numberOfPalindromes = function(array) {
-  return 'Write your method here';
-}
+
+};
 
 var shortestWord = function(array) {
-  return 'Write your method here';
-}
+  return array.reduce(function(a, b) {
+    return (a.length <= b.length) ? a : b;
+  });
+};
 
 var longestWord = function(array) {
-  return 'Write your method here';
-}
+  // return array.reduce(function(a, b) {
+  //   return (a.length >= b.length) ? a : b;
+  // });
+};
 
 var sumNumbers = function(array) {
   return 'Write your method here';
