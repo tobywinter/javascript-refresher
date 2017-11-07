@@ -85,20 +85,15 @@ describe('javascriptRefresher', function(){
     expect(result).toEqual(3);
   });
 
-  //   it('turns a number string into a number', function(){
-  //     var result = stringToNumber('3');
-  //     expect(result).toEqual(3);
-  //   });
-  //
+  it('calculates the average of an array of numbers', function(){
+    var result = calculateAverage([10,15,25]);
+    expect(result).toEqual((10 + 15 + 25) / 3);
+  });
 });
 
 
 
 // describe('javascriptRefresher', function(){
-//   it('calculates the average of an array of numbers', function(){
-//     var result = calculateAverage([10, 15, 25]);
-//     expect(result).toEqual((10 + 15 + 25) / 3);
-//   });
 //
 //   it('gets elements until greater than five', function(){
 //     var result = getElementsUntilGreaterThanFive([1, 3, 5, 4, 1, 2, 6, 2, 1, 3, 7]);
