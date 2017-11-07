@@ -73,9 +73,9 @@ var shortestWord = function(array) {
 };
 
 var longestWord = function(array) {
-  // return array.reduce(function(a, b) {
-  //   return (a.length >= b.length) ? a : b;
-  // });
+  return array.reduce(function(a, b) {
+    return (a.length >= b.length) ? a : b;
+  });
 };
 
 var sumNumbers = function(array) {

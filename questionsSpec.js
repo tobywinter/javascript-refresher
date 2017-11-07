@@ -69,16 +69,16 @@ describe('javascriptRefresher', function(){
     var result = longestWord(['winter', 'is', 'coming']);
     expect(result).toEqual('winter');
   });
+
+  it('sums the numbers in an array', function(){
+    var resutl = sumNumbers([1,3,5,6,2,8]);
+    expect(result).toEqual(25);
+  });
 });
 
 
 
 // describe('javascriptRefresher', function(){
-//
-//   it('returns the longest word in an array', function(){
-//     var result = longestWord(['A', 'Lannister', 'always', 'pays', 'his', 'debts'])
-//     expect(result).toEqual('Lannister');
-//   });
 //
 //   it('sums up the numbers in an array', function(){
 //     var result = sumNumbers([1, 3, 5, 6, 2, 8]);
