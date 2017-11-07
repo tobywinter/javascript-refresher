@@ -2,51 +2,52 @@ var selectElementsStartingWithA = function(array) {
   return array.filter(function(element) {
     return (element[0] == 'a' || element[0] == 'A');
   });
-}
+};
 
 var selectElementsStartingWithVowel = function(array) {
   return array.filter(function(element) {
     return ['a','e', 'i', 'o', 'u'].includes(element[0]);
   });
-}
+};
 
 var removeNullElements = function(array) {
   return array.filter(function(element) {
     return element !== null;
   });
-}
+};
 
 var removeNullAndFalseElements = function(array) {
   return array.filter(function(element) {
     return element !== false && element !== null;
   });
-}
+};
 
 var reverseWordsInArray = function(array) {
   return array.map(function(element) {
-    return element.split('').reverse().join('')
+    return element.split('').reverse().join('');
   });
-}
+};
 
 var everyPossiblePair = function(array) {
-  var result = []
+  var result = [];
   for (var i = 0; i < array.length - 1; i++) {
     for (var j = i; j < array.length -1; j++) {
       result.push([array[i], array[j+1]].sort());
     }
   }
-  return result.sort()
-}
+  return result.sort();
+};
 
 var allElementsExceptFirstThree = function(array) {
   return array.filter(function(element) {
-    return array.indexOf(element) > 2
+    return array.indexOf(element) > 2;
   });
-}
+};
 
 var addElementToBeginning = function(array, element) {
-  return 'Write your method here';
-}
+  array.unshift(element);
+  return array;
+};
 
 var sortByLastLetter = function(array) {
   return 'Write your method here';

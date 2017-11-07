@@ -1,4 +1,3 @@
-'use strict';
 
 
 describe('javascriptRefresher', function(){
@@ -36,6 +35,11 @@ describe('javascriptRefresher', function(){
   it('takes all elements except the first 3', function() {
     var result = allElementsExceptFirstThree([1, 2, 3, 4, 5, 6, 7, 8]);
     expect(result).toEqual([4, 5, 6, 7, 8]);
+  });
+
+  it('adds an element to the beginning of an array', function(){
+    var result = addElementToBeginning([2,3,4,5], 1);
+    expect(result).toEqual([1,2,3,4,5]);
   });
 });
 
