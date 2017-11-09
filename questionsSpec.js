@@ -94,16 +94,16 @@ describe('javascriptRefresher', function(){
     var result = getElementsUntilGreaterThanFive([1,3,5,4,1,2,6,2,1,3,7]);
     expect(result).toEqual([1,3,5,4,1,2]);
   });
+
+  it('converts an array to an object', function(){
+    var result = convertArrayToObject(['Jaime', 'Lannister', 'Robb', 'Stark', 'Joffrey', 'Baratheon']);
+    expect(result).toEqual({'Jaime': 'Lannister', 'Robb': 'Stark', 'Joffrey': 'Baratheon'});
+  });
 });
 
 
 
 // describe('javascriptRefresher', function(){
-//
-//   it('gets elements until greater than five', function(){
-//     var result = getElementsUntilGreaterThanFive([1, 3, 5, 4, 1, 2, 6, 2, 1, 3, 7]);
-//     expect(result).toEqual([1, 3, 5, 4, 1, 2]);
-//   });
 //
 //   it('converts an array to an object', function(){
 //     var result = convertArrayToObject(['Jaime', 'Lannister', 'Robb', 'Stark', 'Joffrey', 'Baratheon']);

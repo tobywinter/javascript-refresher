@@ -62,9 +62,9 @@ var makeNegative = function(number) {
   return parseInt('-'+number);
 };
 
-var numberOfPalindromes = function(array) {
-
-};
+// var numberOfPalindromes = function(array) {
+//
+// };
 
 var shortestWord = function(array) {
   return array.reduce(function(a, b) {
@@ -102,12 +102,16 @@ var getElementsUntilGreaterThanFive = function(array) {
   for (i = 0; array[i] <= 5; i++) {
     result.push(array[i]);
   }
-  return result
+  return result;
 };
 
 var convertArrayToObject = function(array) {
-  return 'Write your method here';
-}
+  var o = {};
+  for (var i = 0; i < array.length; i += 2){
+    o[array[i]] = array[i + 1];
+  }
+  return o; 
+};
 
 var getAllLetters = function(array) {
   return 'Write your method here';
