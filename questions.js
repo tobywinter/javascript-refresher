@@ -110,12 +110,19 @@ var convertArrayToObject = function(array) {
   for (var i = 0; i < array.length; i += 2){
     o[array[i]] = array[i + 1];
   }
-  return o; 
+  return o;
 };
 
 var getAllLetters = function(array) {
-  return 'Write your method here';
-}
+  characters = [];
+  for (var i = 0; i < array.length; i ++){
+    characters.push(array[i].split(''));
+  }
+  var flatten = [].concat.apply([], characters);
+  var sorted = flatten.sort();
+  var unique = Array.from(new Set(sorted));
+  return unique;
+};
 
 var swapKeysAndValues = function(object) {
   return 'Write your method here';

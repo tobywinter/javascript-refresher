@@ -99,16 +99,20 @@ describe('javascriptRefresher', function(){
     var result = convertArrayToObject(['Jaime', 'Lannister', 'Robb', 'Stark', 'Joffrey', 'Baratheon']);
     expect(result).toEqual({'Jaime': 'Lannister', 'Robb': 'Stark', 'Joffrey': 'Baratheon'});
   });
+
+  it('gets all letters in an array of words', function(){
+    // returns sorted
+    var result = getAllLetters(['cat', 'dog', 'fish']);
+    expect(result).toEqual(['a', 'c', 'd', 'f', 'g', 'h', 'i', 'o', 's', 't']);
+    // deals with repeated letters
+    var result2 = getAllLetters(['cat', 'dog', 'fish', 'cat']);
+    expect(result2).toEqual(['a', 'c', 'd', 'f', 'g', 'h', 'i', 'o', 's', 't']);
+  });
 });
 
 
 
 // describe('javascriptRefresher', function(){
-//
-//   it('converts an array to an object', function(){
-//     var result = convertArrayToObject(['Jaime', 'Lannister', 'Robb', 'Stark', 'Joffrey', 'Baratheon']);
-//     expect(result).toEqual({'Jaime': 'Lannister', 'Robb': 'Stark', 'Joffrey': 'Baratheon'});
-//   });
 //
 //   it('gets all letters in an array of words', function(){
 //     // returns sorted
